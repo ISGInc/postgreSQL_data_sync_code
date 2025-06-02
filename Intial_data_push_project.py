@@ -130,7 +130,6 @@ ORDER BY data_source.project_id;"""
 #writing the data into the dataframe
 df = pd.read_sql(query, con=connection)
 connection.close()
-
 pd.set_option('display.max_columns', None)  # Show all columns
 
 # PostgreSQL connection test

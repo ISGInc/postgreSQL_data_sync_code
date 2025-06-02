@@ -217,6 +217,7 @@ try:
                                         business_unit        = :business_unit
                                     WHERE project_id = :project_id""")
 
+
                 connection.execute(update_query, row.to_dict())
                 connection.commit()
                 update_count += 1
